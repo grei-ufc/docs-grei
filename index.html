@@ -290,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="how-to/adicionar-dependencia/" class="md-tabs__link">
+        <a href="how-to/automatizar-criacao-projeto/" class="md-tabs__link">
           
   
   
@@ -434,6 +434,17 @@
       Índice
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linguagens-cientificas-suportadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linguagens Científicas Suportadas
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#para-quem-e-este-guia" class="md-nav__link">
@@ -967,7 +978,7 @@
   <span class="md-ellipsis">
     
   
-    Python e Fluxo Geral
+    Automação e Fluxo Python
   
 
     
@@ -983,11 +994,39 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Python e Fluxo Geral
+    Automação e Fluxo Python
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how-to/automatizar-criacao-projeto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Criar projeto automatizado (.ps1 / .sh)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1742,6 +1781,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#linguagens-cientificas-suportadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linguagens Científicas Suportadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#para-quem-e-este-guia" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1806,9 +1856,43 @@
 
 
 <h1 id="bem-vindo-ao-guia-de-projetos-computacionais-grei-ufc">Bem-vindo ao Guia de Projetos Computacionais — GREI-UFC</h1>
+<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&amp;logoColor=white" />
+<img alt="Julia" src="https://img.shields.io/badge/Julia-9558B2?logo=julia&amp;logoColor=white" />
+<img alt="MATLAB / Octave" src="https://img.shields.io/badge/MATLAB%20%2F%20Octave-0790C0?logo=gnuoctave&amp;logoColor=white" />
+<img alt="C" src="https://img.shields.io/badge/C-A8B9CC?logo=c&amp;logoColor=black" />
+<img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&amp;logoColor=white" /></p>
 <p>O avanço da ciência moderna está intrinsecamente ligado à capacidade de processar, analisar e compartilhar informações de forma digital. Seja modelando sistemas elétricos de potência, implementando controle digital em microcontroladores ou analisando sinais de sensores, a programação tornou-se uma ferramenta indispensável na Engenharia Elétrica.</p>
 <p>No entanto, a transição para fluxos de trabalho digitais traz desafios significativos, especialmente para pesquisadores iniciantes que, embora dominem suas áreas de estudo, frequentemente carecem de treinamento formal em práticas de engenharia de software e gestão de dados. O resultado? O clássico problema do <em>"funciona na minha máquina"</em>, no qual um código falha ao ser executado pelo orientador ou por colegas devido a diferenças sutis nas versões instaladas ou caminhos quebrados.</p>
-<p>Este guia do <strong>GREI-UFC (Grupo de Redes Elétricas Inteligentes)</strong> foi criado para resolver exatamente isso. Aqui, você aprenderá a transformar "trabalhos no computador" desorganizados em projetos científicos rigorosos, transparentes e, acima de tudo, <strong>reprodutíveis</strong> — seja em <strong>Python</strong>, <strong>Julia</strong>, <strong>MATLAB/Simulink</strong>, <strong>GNU Octave</strong> ou <strong>C/C++</strong>.</p>
+<p>Este guia do <strong>GREI-UFC (Grupo de Redes Elétricas Inteligentes)</strong> foi criado para resolver exatamente isso. Aqui, você aprenderá a transformar "trabalhos no computador" desorganizados em projetos científicos rigorosos, transparentes e, acima de tudo, <strong>reprodutíveis</strong>.</p>
+<h2 id="linguagens-cientificas-suportadas">Linguagens Científicas Suportadas</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span> <strong>Python</strong></p>
+<hr />
+<p>Processamento de sinais, ciência de dados, aprendizado de máquina e automação com ambientes isolados via <code>uv</code>, <code>pytest</code> e <code>Ruff</code>.</p>
+<p><a href="tutorials/setup-uv/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Começar pelo Tutorial 1</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.138 17.569a5.569 5.569 0 1 1-11.138 0 5.569 5.569 0 1 1 11.138 0m6.431-11.138a5.569 5.569 0 1 1-11.138 0 5.569 5.569 0 1 1 11.138 0M24 17.569a5.569 5.569 0 1 1-11.138 0 5.569 5.569 0 1 1 11.138 0"/></svg></span> <strong>Julia</strong></p>
+<hr />
+<p>Otimização de sistemas de potência (<code>JuMP.jl</code>, <code>PowerModels.jl</code>) e equações diferenciais de alto desempenho com <code>Pkg</code> (<code>Project.toml</code> e <code>Manifest.toml</code>).</p>
+<p><a href="how-to/projetos-julia/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Guia de Projetos em Julia</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.5.007c-2.414-.09-4.658.715-6.286 2.485C2.913 3.906 2.188 5.75 1.987 7.77h-.42C.703 7.77 0 8.473 0 9.335v4.743c0 .863.702 1.567 1.565 1.567h2.091a17 17 0 0 0 2.57 3.687c4.46 4.848 10.696 6.036 14.561 3.016h2.102c.577 0 1.05-.473 1.05-1.05V18.43a1.03 1.03 0 0 0-.257-.668c.858-3.433-.045-7.642-2.52-11.219.002-.017.01-.032.01-.049V4.482a.82.82 0 0 0-.816-.819h-1.703C16.142 1.372 13.218.11 10.5.007m1.75 2.18c1.78-.01 3.69.62 5.425 1.85a.8.8 0 0 0-.15.445v2.013c0 .449.368.82.816.82h2.016a.8.8 0 0 0 .392-.116c2.248 3.302 2.735 7.322 1.24 10.18h-1.964c-.579 0-1.052.475-1.052 1.051v1.794c-2.991 1.3-7.005.222-9.964-2.992a12.7 12.7 0 0 1-1.55-2.098c.256-.279.416-.647.416-1.056V9.335c0-.862-.702-1.565-1.565-1.565H5.9c.238-1.364.781-2.612 1.688-3.596 1.225-1.331 2.88-1.98 4.661-1.988zm6.091 2.01h2.016c.162 0 .283.123.283.285v2.013c0 .163-.12.285-.283.285H18.34a.28.28 0 0 1-.285-.285V4.482a.28.28 0 0 1 .285-.285zM1.566 8.303h4.743c.578 0 1.033.456 1.033 1.032v4.743c0 .577-.455 1.033-1.032 1.033H1.567a1.024 1.024 0 0 1-1.034-1.032V9.335c0-.576.455-1.032 1.032-1.032zm18.459 9.61h2.865c.29 0 .52.226.52.518v2.865a.51.51 0 0 1-.52.519h-2.865a.51.51 0 0 1-.519-.519v-2.864a.51.51 0 0 1 .519-.518z"/></svg></span> <strong>MATLAB / Simulink &amp; GNU Octave</strong></p>
+<hr />
+<p>Modelagem de conversores, controle clássico/moderno e diagramas de blocos <code>.slx</code> versionáveis com inicialização automática via <code>startup.m</code>.</p>
+<p><a href="how-to/projetos-matlab-octave/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Guia de MATLAB e Octave</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.592 9.196s-.354-3.298-3.627-3.39c-3.274-.09-4.955 2.474-4.955 6.14s1.858 6.597 5.045 6.597c3.184 0 3.538-3.665 3.538-3.665l6.104.365s.36 3.31-2.196 5.836c-2.552 2.524-5.69 2.937-7.876 2.92-2.19-.016-5.226.035-8.16-2.97-2.938-3.01-3.436-5.93-3.436-8.8s.556-6.67 4.047-9.55C7.444.72 9.849 0 12.254 0c10.042 0 10.717 9.26 10.717 9.26z"/></svg></span> <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91s.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69s.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91M12 19.11c-3.92 0-7.109-3.19-7.109-7.11s3.19-7.11 7.11-7.11a7.13 7.13 0 0 1 6.156 3.553l-3.076 1.78a3.57 3.57 0 0 0-3.08-1.78A3.56 3.56 0 0 0 8.444 12 3.56 3.56 0 0 0 12 15.555a3.57 3.57 0 0 0 3.08-1.778l3.078 1.78A7.14 7.14 0 0 1 12 19.11m7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/></svg></span> <strong>C / C++ e Embarcados</strong></p>
+<hr />
+<p>Firmware de tempo real para DSPs (TI C2000, STM32, ESP32) e simulação numérica com arquitetura desacoplada, <code>CMake</code>, <code>CTest</code> e <code>PlatformIO</code>.</p>
+<p><a href="how-to/projetos-c-cpp/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Guia de C/C++ e Embarcados</a></p>
+</li>
+</ul>
+</div>
 <h2 id="para-quem-e-este-guia">Para quem é este guia?</h2>
 <p>Este material foi especificamente elaborado para <strong>estudantes (Iniciação Científica, TCC ou Pós-graduação)</strong> que possuem pouca ou nenhuma experiência prévia com engenharia de software, versionamento de código ou documentação técnica.</p>
 <div class="admonition tip">
@@ -1818,20 +1902,21 @@
 <h2 id="como-este-site-esta-organizado">Como este site está organizado?</h2>
 <p>Para evitar a confusão comum de misturar teoria densa com passos práticos, este guia adota a metodologia <a href="explanation/filosofia-diataxis/"><strong>Diátaxis</strong></a>. Todo o conteúdo está dividido em quatro quadrantes, dependendo do que você precisa no momento:</p>
 <ul>
-<li>🎓 <strong>Tutoriais (Comece por aqui):</strong> Lições práticas e passo a passo (usando Python e Git como fio condutor). O objetivo é guiar você pela mão e garantir que seu <a href="tutorials/setup-uv/">ambiente isolado com <code>uv</code></a>, seu <a href="tutorials/primeiro-git/">primeiro repositório Git</a>, a <a href="tutorials/estrutura-projeto/">estrutura de pastas</a>, a <a href="tutorials/documentando-mkdocs/">documentação com MkDocs</a> e os <a href="tutorials/testando-pytest/">testes com <code>pytest</code></a> funcionem perfeitamente.</li>
+<li>🎓 <strong>Tutoriais (Comece por aqui):</strong> Lições práticas e passo a passo (usando <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span> Python e <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.85 1.85 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.85 1.85 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187"/></svg></span> Git como fio condutor). O objetivo é guiar você pela mão e garantir que seu <a href="tutorials/setup-uv/">ambiente isolado com <code>uv</code></a>, seu <a href="tutorials/primeiro-git/">primeiro repositório Git</a>, a <a href="tutorials/estrutura-projeto/">estrutura de pastas</a>, a <a href="tutorials/documentando-mkdocs/">documentação com MkDocs</a> e os <a href="tutorials/testando-pytest/">testes com <code>pytest</code></a> funcionem perfeitamente.</li>
 <li>🛠️ <strong>Guias Práticos (How-To):</strong> Receitas diretas para tarefas do dia a dia no laboratório:<ul>
-<li><strong>Outras Linguagens Científicas:</strong> Como estruturar, isolar ambientes e testar <a href="how-to/projetos-julia/">Projetos em Julia</a>, <a href="how-to/projetos-matlab-octave/">Projetos em MATLAB/Simulink e GNU Octave</a> e <a href="how-to/projetos-c-cpp/">Projetos em C/C++ e Sistemas Embarcados</a>.</li>
+<li><strong>Automação de Projetos (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.83 4c.49 0 .8.4.67.89l-3.16 14.22c-.11.49-.59.89-1.08.89H2.17c-.49 0-.8-.4-.67-.89L4.66 4.89C4.77 4.4 5.25 4 5.74 4zm-6 12h-4c-.46 0-.83.38-.83.84 0 .47.37.85.83.85h4c.47 0 .85-.38.85-.85 0-.46-.38-.84-.85-.84m-10.05.28a.87.87 0 0 0-.21 1.22c.28.42.84.5 1.24.23 7.35-5.17 7.4-5.23 7.45-5.26.18-.16.27-.38.28-.6.01-.2-.04-.37-.16-.56L9.46 6.03A.867.867 0 0 0 8.21 6c-.36.32-.38.88-.05 1.24l4.15 4.44z"/></svg></span> <code>.ps1</code> e <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.038 4.9 13.461.402a2.86 2.86 0 0 0-2.923.001L2.961 4.9A3.02 3.02 0 0 0 1.5 7.503v8.995c0 1.073.557 2.066 1.462 2.603l7.577 4.497a2.86 2.86 0 0 0 2.922 0l7.577-4.497a3.02 3.02 0 0 0 1.462-2.603V7.503A3.02 3.02 0 0 0 21.038 4.9M15.17 18.946l.013.646c.001.078-.05.167-.111.198l-.383.22c-.061.031-.111-.007-.112-.085l-.007-.635c-.328.136-.66.169-.872.084-.04-.016-.057-.075-.041-.142l.139-.584a.24.24 0 0 1 .069-.121.2.2 0 0 1 .036-.026q.033-.017.062-.006c.229.077.521.041.802-.101.357-.181.596-.545.592-.907-.003-.328-.181-.465-.613-.468-.55.001-1.064-.107-1.072-.917-.007-.667.34-1.361.889-1.8l-.007-.652c-.001-.08.048-.168.111-.2l.37-.236c.061-.031.111.007.112.087l.006.653c.273-.109.511-.138.726-.088.047.012.067.076.048.151l-.144.578a.26.26 0 0 1-.065.116.2.2 0 0 1-.038.028.1.1 0 0 1-.057.009c-.098-.022-.332-.073-.699.113-.385.195-.52.53-.517.778.003.297.155.387.681.396.7.012 1.003.318 1.01 1.023.007.689-.362 1.433-.928 1.888m3.973-1.087c0 .06-.008.116-.058.145l-1.916 1.164c-.05.029-.09.004-.09-.056v-.494c0-.06.037-.093.087-.122l1.887-1.129c.05-.029.09-.004.09.056zm1.316-11.062-7.168 4.427c-.894.523-1.553 1.109-1.553 2.187v8.833c0 .645.26 1.063.66 1.184a2.3 2.3 0 0 1-.398.039c-.42 0-.833-.114-1.197-.33L3.226 18.64a2.5 2.5 0 0 1-1.201-2.142V7.503c0-.881.46-1.702 1.201-2.142L10.803.863a2.34 2.34 0 0 1 2.394 0l7.577 4.498a2.48 2.48 0 0 1 1.164 1.732c-.252-.536-.818-.682-1.479-.296"/></svg></span> <code>.sh</code>):</strong> <a href="how-to/automatizar-criacao-projeto/">Como criar automaticamente toda a estrutura do diretório de trabalho</a> no Windows e Linux/macOS.</li>
+<li><strong>Linguagens Científicas:</strong> Como estruturar, isolar ambientes e testar <a href="how-to/projetos-julia/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.138 17.569a5.569 5.569 0 1 1-11.138 0 5.569 5.569 0 1 1 11.138 0m6.431-11.138a5.569 5.569 0 1 1-11.138 0 5.569 5.569 0 1 1 11.138 0M24 17.569a5.569 5.569 0 1 1-11.138 0 5.569 5.569 0 1 1 11.138 0"/></svg></span> Projetos em Julia</a>, <a href="how-to/projetos-matlab-octave/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.5.007c-2.414-.09-4.658.715-6.286 2.485C2.913 3.906 2.188 5.75 1.987 7.77h-.42C.703 7.77 0 8.473 0 9.335v4.743c0 .863.702 1.567 1.565 1.567h2.091a17 17 0 0 0 2.57 3.687c4.46 4.848 10.696 6.036 14.561 3.016h2.102c.577 0 1.05-.473 1.05-1.05V18.43a1.03 1.03 0 0 0-.257-.668c.858-3.433-.045-7.642-2.52-11.219.002-.017.01-.032.01-.049V4.482a.82.82 0 0 0-.816-.819h-1.703C16.142 1.372 13.218.11 10.5.007m1.75 2.18c1.78-.01 3.69.62 5.425 1.85a.8.8 0 0 0-.15.445v2.013c0 .449.368.82.816.82h2.016a.8.8 0 0 0 .392-.116c2.248 3.302 2.735 7.322 1.24 10.18h-1.964c-.579 0-1.052.475-1.052 1.051v1.794c-2.991 1.3-7.005.222-9.964-2.992a12.7 12.7 0 0 1-1.55-2.098c.256-.279.416-.647.416-1.056V9.335c0-.862-.702-1.565-1.565-1.565H5.9c.238-1.364.781-2.612 1.688-3.596 1.225-1.331 2.88-1.98 4.661-1.988zm6.091 2.01h2.016c.162 0 .283.123.283.285v2.013c0 .163-.12.285-.283.285H18.34a.28.28 0 0 1-.285-.285V4.482a.28.28 0 0 1 .285-.285zM1.566 8.303h4.743c.578 0 1.033.456 1.033 1.032v4.743c0 .577-.455 1.033-1.032 1.033H1.567a1.024 1.024 0 0 1-1.034-1.032V9.335c0-.576.455-1.032 1.032-1.032zm18.459 9.61h2.865c.29 0 .52.226.52.518v2.865a.51.51 0 0 1-.52.519h-2.865a.51.51 0 0 1-.519-.519v-2.864a.51.51 0 0 1 .519-.518z"/></svg></span> Projetos em MATLAB/Simulink e GNU Octave</a> e <a href="how-to/projetos-c-cpp/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.592 9.196s-.354-3.298-3.627-3.39c-3.274-.09-4.955 2.474-4.955 6.14s1.858 6.597 5.045 6.597c3.184 0 3.538-3.665 3.538-3.665l6.104.365s.36 3.31-2.196 5.836c-2.552 2.524-5.69 2.937-7.876 2.92-2.19-.016-5.226.035-8.16-2.97-2.938-3.01-3.436-5.93-3.436-8.8s.556-6.67 4.047-9.55C7.444.72 9.849 0 12.254 0c10.042 0 10.717 9.26 10.717 9.26z"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91s.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69s.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91M12 19.11c-3.92 0-7.109-3.19-7.109-7.11s3.19-7.11 7.11-7.11a7.13 7.13 0 0 1 6.156 3.553l-3.076 1.78a3.57 3.57 0 0 0-3.08-1.78A3.56 3.56 0 0 0 8.444 12 3.56 3.56 0 0 0 12 15.555a3.57 3.57 0 0 0 3.08-1.778l3.078 1.78A7.14 7.14 0 0 1 12 19.11m7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"/></svg></span> Projetos em C/C++ e Sistemas Embarcados</a>.</li>
 <li><strong>Ambiente Python e Notebooks:</strong> <a href="how-to/adicionar-dependencia/">Gerenciar dependências com <code>uv</code></a>, <a href="how-to/usar-jupyter-uv/">Usar Jupyter Notebooks com <code>uv</code></a>, <a href="how-to/configurar-precommit-ruff/">Configurar Ruff e pre-commit</a> e <a href="how-to/documentar-codigo-docstrings/">Documentar funções com Docstrings</a>.</li>
 <li><strong>Versionamento, Dados e Governança:</strong> <a href="how-to/fluxo-branches-pull-requests/">Branches, Pull Requests e Releases</a>, <a href="how-to/resolver-conflitos-git/">Resolver conflitos no Git</a>, <a href="how-to/gerenciar-dados-gitignore/">Gerenciar dados e <code>.gitignore</code> multilíngue</a>, <a href="how-to/publicar-github-pages/">Publicar no GitHub Pages</a>, <a href="how-to/escrever-readme/">Escrever um README</a> e <a href="how-to/escolher-licenca/">Escolher uma licença</a>.</li>
 </ul>
 </li>
-<li>📖 <strong>Referência Técnica:</strong> Tabelas de consulta rápida com <a href="reference/comandos-uv/">comandos <code>uv</code></a>, <a href="reference/comandos-git/">comandos Git</a>, <a href="reference/estrutura-arquivos/">estrutura de arquivos multilíngue</a>, <a href="reference/convencoes-nomenclatura/">convenções de nomenclatura (Python, Julia, MATLAB e C/C++)</a>, <a href="reference/solucao-problemas/">solução de problemas comuns (FAQ)</a> e <a href="reference/glossario/">glossário técnico</a>.</li>
+<li>📖 <strong>Referência Técnica:</strong> Tabelas de consulta rápida com <a href="reference/comandos-uv/">comandos <code>uv</code></a>, <a href="reference/comandos-git/">comandos Git</a>, <a href="reference/estrutura-arquivos/">estrutura de arquivos multilíngue</a>, <a href="reference/convencoes-nomenclatura/">convenções de nomenclatura</a>, <a href="reference/solucao-problemas/">solução de problemas comuns (FAQ)</a> e <a href="reference/glossario/">glossário técnico</a>.</li>
 <li>💡 <strong>Explicação e Conceitos:</strong> O "porquê" das coisas. Leituras conceituais sobre <a href="explanation/reproducibilidade/">reprodutibilidade computacional</a>, <a href="explanation/controle-de-versao/">funcionamento do Git</a>, <a href="explanation/isolamento-ambientes/">isolamento de ambientes</a>, <a href="explanation/filosofia-diataxis/">filosofia Diátaxis</a> e <a href="explanation/testes-automatizados/">testes automatizados</a>.</li>
 </ul>
 <h2 id="pre-requisitos">Pré-requisitos</h2>
 <p>Para aproveitar este guia, você não precisa ser um programador experiente. Você precisará apenas de:</p>
 <ol>
-<li>Um computador (Windows, macOS ou Linux).</li>
+<li>Um computador (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="m0 93.7 183.6-25.3v177.4H0zm0 324.6 183.6 25.3V268.4H0zm203.8 28L448 480V268.4H203.8zm0-380.6v180.1H448V32z"/></svg></span> Windows, <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg></span> macOS ou <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.504 0q-.232 0-.48.021c-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.4.4 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071s1.592-.536 2.257-1.306c.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.36.36 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139m.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105l-.004-.021-.004-.024a1.8 1.8 0 0 1-.15.706.95.95 0 0 1-.213.335 1 1 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.3 1.3 0 0 0-.22-.066c.05-.06.146-.133.183-.198q.08-.193.088-.402v-.02a1.2 1.2 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.2 1.2 0 0 0-.09.4v.019q.002.134.02.267c-.193-.067-.438-.135-.607-.202a2 2 0 0 1-.018-.2v-.02a1.8 1.8 0 0 1 .15-.768 1.08 1.08 0 0 1 .43-.533 1 1 0 0 1 .594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2q.018-.136.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.6.6 0 0 0-.166-.267.25.25 0 0 0-.183-.064h-.021c-.071.006-.13.04-.186.132a.55.55 0 0 0-.12.27 1 1 0 0 0-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268q.014.014.034.024c-.07.057-.117.07-.176.136a.3.3 0 0 1-.131.068 2.6 2.6 0 0 1-.275-.402 1.8 1.8 0 0 1-.155-.667 1.8 1.8 0 0 1 .08-.668 1.4 1.4 0 0 1 .283-.535c.128-.133.26-.2.418-.2m1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.57.57 0 0 1 .016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.1 1.1 0 0 1-.448-.067 4 4 0 0 1-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71q-.104-.403.193-.6c.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.7 2.7 0 0 0-.402-.533 1.5 1.5 0 0 0-.275-.333c.182 0 .338-.03.465-.067a.62.62 0 0 0 .314-.334c.108-.267 0-.697-.345-1.163s-.931-.995-1.788-1.521c-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.1 8.1 0 0 1 .647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335q.058.005.11.006c.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01q.08 0 .157.014c.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602q-.553-.1-.723-.4c-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336m7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8 8 0 0 1-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065m-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z"/></svg></span> Linux).</li>
 <li>Acesso à internet.</li>
 <li>Vontade de abandonar velhos hábitos (como salvar arquivos com o nome <code>script_final_revisado_v3.py</code>) e adotar um fluxo de trabalho profissional.</li>
 </ol>
