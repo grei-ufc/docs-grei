@@ -26,6 +26,9 @@ Abra o terminal na raiz do seu projeto `controle_motores` e execute os comandos 
     mkdir -p src data/raw data/processed tests docs
     ```
 
+!!! tip "Quer criar toda essa estrutura (com Git, `.gitignore`, `LICENSE` e testes) em 1 segundo?"
+    Após aprender os conceitos deste tutorial, você pode utilizar os nossos [**Scripts de Automação (`.ps1` para Windows e `.sh` para Linux/macOS)**](../how-to/automatizar-criacao-projeto.md) para gerar projetos completos em Python, Julia, MATLAB/Octave ou C/C++ com um único comando!
+
 ## Passo 3: Entendendo cada Compartimento
 
 Pense nessa estrutura como as bancadas organizadas de um laboratório de Engenharia Elétrica:
@@ -87,6 +90,6 @@ Vamos organizar o script que criamos no [Tutorial 1](setup-uv.md) seguindo as [C
 ## Próximo Passo e Leitura Complementar
 
 * 👉 **Próximo Tutorial:** [Tutorial 4: Documentando com MkDocs](documentando-mkdocs.md)
-* 💡 **Entenda a fundo:** [Por que Reprodutibilidade Computacional?](../explanation/reproducibilidade.md)
+* 🛠️ **Automação:** [Como Automatizar a Criação do Diretório de Trabalho (`.ps1` e `.sh`)](../how-to/automatizar-criacao-projeto.md)
 * 🛠️ **Guias rápidos:** [Como Gerenciar Dados Científicos e `.gitignore`](../how-to/gerenciar-dados-gitignore.md), [Como Escrever um README Profissional](../how-to/escrever-readme.md) e [Como Escolher uma Licença](../how-to/escolher-licenca.md)
 * 📖 **Referência:** [Estrutura de Arquivos](../reference/estrutura-arquivos.md) e [Convenções de Nomenclatura](../reference/convencoes-nomenclatura.md)
