@@ -26,7 +26,7 @@ Independentemente da linguagem de programação utilizada na sua pesquisa, todo 
 
 Veja como a mesma validação matemática é escrita de forma simples em **Python**, **Julia**, **MATLAB/Octave** e **C/C++**:
 
-=== "Python (`pytest`)"
+=== ":simple-python: Python (`pytest`)"
 
     ```python title="tests/test_potencia.py"
     from src.processamento import calcular_potencia_media
@@ -44,7 +44,7 @@ Veja como a mesma validação matemática é escrita de forma simples em **Pytho
     ```
     Execução no terminal: `uv run pytest`
 
-=== "Julia (`Test`)"
+=== ":simple-julia: Julia (`Test`)"
 
     ```julia title="test/runtests.jl"
     using Test
@@ -63,7 +63,7 @@ Veja como a mesma validação matemática é escrita de forma simples em **Pytho
     ```
     Execução no terminal: `julia --project=. test/runtests.jl`
 
-=== "MATLAB / Octave (`assert`)"
+=== ":simple-octave: MATLAB / Octave (`assert`)"
 
     ```matlab title="tests/test_potencia.m"
     % 1. Arrange
@@ -78,7 +78,7 @@ Veja como a mesma validação matemática é escrita de forma simples em **Pytho
     ```
     Execução no MATLAB: `runtests('tests')` | No Octave: `octave --eval "run('tests/test_potencia.m')"`
 
-=== "C / C++ (`assert.h` / `CTest`)"
+=== ":simple-c: :simple-cplusplus: C / C++ (`assert.h` / `CTest`)"
 
     ```c title="tests/test_potencia.c"
     #include <assert.h>
@@ -105,5 +105,5 @@ Veja como a mesma validação matemática é escrita de forma simples em **Pytho
 ## Veja Também
 
 * 🎓 **Hora de praticar (Python):** [Tutorial 5: Automatizando Testes com `pytest`](../tutorials/testando-pytest.md)
-* 🛠️ **Guias por linguagem:** [Projetos em Julia](../how-to/projetos-julia.md), [Projetos em MATLAB/Octave](../how-to/projetos-matlab-octave.md) e [Projetos em C/C++](../how-to/projetos-c-cpp.md)
+* 🛠️ **Guias por linguagem:** [:simple-julia: Projetos em Julia](../how-to/projetos-julia.md), [:simple-octave: Projetos em MATLAB/Octave](../how-to/projetos-matlab-octave.md) e [:simple-c: :simple-cplusplus: Projetos em C/C++](../how-to/projetos-c-cpp.md)
 * 📖 **Referência:** [Glossário Técnico](../reference/glossario.md)

@@ -1,4 +1,6 @@
-# Como Estruturar Projetos em MATLAB/Simulink e GNU Octave
+# :simple-octave: Como Estruturar Projetos em MATLAB/Simulink e GNU Octave
+
+![MATLAB / GNU Octave](https://img.shields.io/badge/MATLAB%20%2F%20Octave-0790C0?logo=gnuoctave&logoColor=white)
 
 O **MATLAB** (junto ao **Simulink**) e sua alternativa de código aberto **GNU Octave** são ferramentas clássicas na Engenharia Elétrica para projetos de controle, eletrônica de potência, processamento digital de sinais e análise de sistemas elétricos (ex: *MATPOWER*).
 
@@ -127,7 +129,6 @@ disp('Todos os testes passaram com sucesso!');
 
 ## Veja Também
 
+* 🛠️ **Criação automática:** [Como Automatizar a Criação do Diretório de Trabalho (`.ps1` e `.sh`)](automatizar-criacao-projeto.md)
 * 💡 **Conceitos:** [Por que Reprodutibilidade Computacional?](../explanation/reproducibilidade.md) e [Testes Automatizados](../explanation/testes-automatizados.md)
-* 🛠️ **Dados e `.gitignore`:** [Como Gerenciar Dados Científicos e Configurar o `.gitignore`](gerenciar-dados-gitignore.md)
 * 📖 **Referência:** [Convenções de Nomenclatura](../reference/convencoes-nomenclatura.md) e [Estrutura de Arquivos](../reference/estrutura-arquivos.md)
-

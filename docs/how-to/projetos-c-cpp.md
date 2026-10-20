@@ -1,4 +1,8 @@
-# Como Estruturar Projetos Científicos e Embarcados em C/C++
+# :simple-c: :simple-cplusplus: Como Estruturar Projetos Científicos e Embarcados em C/C++
+
+![C](https://img.shields.io/badge/C-11-A8B9CC?logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/C%2B%2B-17%2F20-00599C?logo=cplusplus&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-3.20+-064F8C?logo=cmake&logoColor=white)
 
 As linguagens **C e C++** são a base da Engenharia Elétrica quando o assunto é **sistemas embarcados de tempo real** (firmware para DSPs da família TI C2000, microcontroladores STM32 e ESP32 aplicados ao controle de conversores estáticos e instrumentação) e **simulações numéricas de altíssimo desempenho**.
 
@@ -90,7 +94,7 @@ float atualizar_pi(ControladorPI *pi, float erro) {
 
 Nunca exija que seu colega digite comandos gigantes do `gcc` manualmente. Escolha a ferramenta de *build* adequada ao seu tipo de projeto:
 
-=== "C/C++ Científico e Testes no PC (`CMake`)"
+=== ":simple-cmake: C/C++ Científico e Testes no PC (`CMake`)"
 
     Crie um arquivo `CMakeLists.txt` na raiz do projeto. Ele funciona em Windows, Linux e macOS:
 
@@ -164,7 +168,6 @@ int main(void) {
 
 ## Veja Também
 
+* 🛠️ **Criação automática:** [Como Automatizar a Criação do Diretório de Trabalho (`.ps1` e `.sh`)](automatizar-criacao-projeto.md)
 * 💡 **Conceitos:** [Testes Automatizados: O Rigor Científico no Código](../explanation/testes-automatizados.md)
-* 🛠️ **Dados e `.gitignore`:** [Como Gerenciar Dados Científicos e Configurar o `.gitignore`](gerenciar-dados-gitignore.md)
 * 📖 **Referência:** [Convenções de Nomenclatura](../reference/convencoes-nomenclatura.md) e [Estrutura de Arquivos](../reference/estrutura-arquivos.md)
-

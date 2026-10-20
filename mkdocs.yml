@@ -38,8 +38,12 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - tables
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -78,7 +82,8 @@ nav:
       - 5. Testando com pytest: tutorials/testando-pytest.md
 
   - Guias (How-to):
-      - Python e Fluxo Geral:
+      - Automação e Fluxo Python:
+          - Criar projeto automatizado (.ps1 / .sh): how-to/automatizar-criacao-projeto.md
           - Adicionar dependência (uv): how-to/adicionar-dependencia.md
           - Usar Jupyter Notebooks com uv: how-to/usar-jupyter-uv.md
           - Configurar pre-commit e Ruff: how-to/configurar-precommit-ruff.md

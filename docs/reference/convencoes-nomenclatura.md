@@ -17,7 +17,7 @@ Independentemente da linguagem de programação escolhida, a organização de pa
 
 Clique na aba correspondente à linguagem utilizada no seu projeto para consultar o padrão de nomenclatura de arquivos, variáveis, funções, classes/estruturas e constantes:
 
-=== "Python (PEP 8)"
+=== ":simple-python: Python (PEP 8)"
 
     | Elemento | Padrão | Exemplo na Engenharia Elétrica |
     | :--- | :--- | :--- |
@@ -26,7 +26,7 @@ Clique na aba correspondente à linguagem utilizada no seu projeto para consulta
     | **Classes** | `PascalCase` | `MotorInducao`, `FiltroKalman` |
     | **Constantes Globais** | `UPPER_SNAKE_CASE` | `FREQUENCIA_REDE_HZ = 60.0` |
 
-=== "Julia (Julia Style Guide)"
+=== ":simple-julia: Julia (Julia Style Guide)"
 
     | Elemento | Padrão | Exemplo na Engenharia Elétrica |
     | :--- | :--- | :--- |
@@ -36,7 +36,7 @@ Clique na aba correspondente à linguagem utilizada no seu projeto para consulta
     | **Módulos e Tipos (`struct`)** | `PascalCase` | `BarraPQ`, `ParametrosLinha` |
     | **Constantes (`const`)** | `UPPER_SNAKE_CASE` | `const FREQUENCIA_BASE_HZ = 60.0` |
 
-=== "MATLAB / GNU Octave"
+=== ":simple-octave: MATLAB / GNU Octave"
 
     | Elemento | Padrão | Exemplo na Engenharia Elétrica |
     | :--- | :--- | :--- |
@@ -45,7 +45,7 @@ Clique na aba correspondente à linguagem utilizada no seu projeto para consulta
     | **Variáveis e Funções** | `snake_case` (ou `camelCase`) | `tensao_entrada`, `calcular_ganho_pid()` |
     | **Constantes de Parâmetros** | `UPPER_SNAKE_CASE` (ou prefixo claro) | `FREQ_CHAVEAMENTO_HZ = 20e3;` |
 
-=== "C / C++ (Embarcados e Simulação)"
+=== ":simple-c: :simple-cplusplus: C / C++ (Embarcados e Simulação)"
 
     | Elemento | Padrão | Exemplo na Engenharia Elétrica |
     | :--- | :--- | :--- |
@@ -59,4 +59,4 @@ Clique na aba correspondente à linguagem utilizada no seu projeto para consulta
 ## Guias Relacionados
 
 * 🎓 **Estrutura de diretórios:** [Tutorial 3: Estruturando seu Primeiro Projeto de Engenharia](../tutorials/estrutura-projeto.md)
-* 🛠️ **Guias por linguagem:** [Python (Ruff)](../how-to/configurar-precommit-ruff.md), [Julia](../how-to/projetos-julia.md), [MATLAB/Octave](../how-to/projetos-matlab-octave.md) e [C/C++](../how-to/projetos-c-cpp.md)
+* 🛠️ **Guias por linguagem:** [:simple-python: Python (Ruff)](../how-to/configurar-precommit-ruff.md), [:simple-julia: Julia](../how-to/projetos-julia.md), [:simple-octave: MATLAB/Octave](../how-to/projetos-matlab-octave.md) e [:simple-c: :simple-cplusplus: C/C++](../how-to/projetos-c-cpp.md)

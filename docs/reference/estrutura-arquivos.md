@@ -20,17 +20,17 @@ Lista dos arquivos e diretórios fundamentais em uma arquitetura de software de 
 
 | Linguagem | Arquivo / Pasta | Função Técnica | Versionar no Git? |
 | :--- | :--- | :--- | :--- |
-| **Python** | `pyproject.toml` | Metadados do projeto, dependências principais e configurações (`pytest`, `Ruff`). | ✅ **Sim** |
-| **Python** | `uv.lock` e `.python-version` | Versões exatas + *hashes* de todos os pacotes instalados e versão fixada do Python. | ✅ **Sim** |
-| **Python** | `.venv/` e `__pycache__/` | Ambiente virtual local e bytecodes compilados na máquina do usuário. | ❌ **NUNCA** |
-| **Julia** | `Project.toml` | Declaração das dependências diretas e compatibilidade do projeto Julia. | ✅ **Sim** |
-| **Julia** | `Manifest.toml` | Árvore completa e exata de versões de todos os pacotes da simulação. | ✅ **Sim** |
-| **MATLAB / Octave** | `startup.m` | Script de inicialização que adiciona `src/`, `scripts/` e `models/` ao *path* automaticamente. | ✅ **Sim** |
-| **MATLAB / Simulink** | `models/*.slx` | Diagramas de blocos do Simulink (acompanhados de script `.m` de parâmetros). | ✅ **Sim** |
-| **MATLAB / Simulink** | `slprj/`, `*.slxc`, `*.asv` | Pastas temporárias de compilação do Simulink e arquivos de salvamento automático. | ❌ **NUNCA** |
-| **C / C++** | `include/*.h` e `src/*.c` | Arquivos de cabeçalho (interface) e implementação do código-fonte. | ✅ **Sim** |
-| **C / C++** | `CMakeLists.txt` / `platformio.ini` | Configuração reprodutível de compilação (*build*) e dependências de firmware. | ✅ **Sim** |
-| **C / C++** | `build/`, `.pio/`, `*.o`, `*.elf`, `*.hex` | Pastas de compilação, objetos intermediários e binários executáveis. | ❌ **NUNCA** |
+| :simple-python: **Python** | `pyproject.toml` | Metadados do projeto, dependências principais e configurações (`pytest`, `Ruff`). | ✅ **Sim** |
+| :simple-python: **Python** | `uv.lock` e `.python-version` | Versões exatas + *hashes* de todos os pacotes instalados e versão fixada do Python. | ✅ **Sim** |
+| :simple-python: **Python** | `.venv/` e `__pycache__/` | Ambiente virtual local e bytecodes compilados na máquina do usuário. | ❌ **NUNCA** |
+| :simple-julia: **Julia** | `Project.toml` | Declaração das dependências diretas e compatibilidade do projeto Julia. | ✅ **Sim** |
+| :simple-julia: **Julia** | `Manifest.toml` | Árvore completa e exata de versões de todos os pacotes da simulação. | ✅ **Sim** |
+| :simple-octave: **MATLAB / Octave** | `startup.m` | Script de inicialização que adiciona `src/`, `scripts/` e `models/` ao *path* automaticamente. | ✅ **Sim** |
+| :simple-octave: **MATLAB / Simulink** | `models/*.slx` | Diagramas de blocos do Simulink (acompanhados de script `.m` de parâmetros). | ✅ **Sim** |
+| :simple-octave: **MATLAB / Simulink** | `slprj/`, `*.slxc`, `*.asv` | Pastas temporárias de compilação do Simulink e arquivos de salvamento automático. | ❌ **NUNCA** |
+| :simple-c: :simple-cplusplus: **C / C++** | `include/*.h` e `src/*.c` | Arquivos de cabeçalho (interface) e implementação do código-fonte. | ✅ **Sim** |
+| :simple-c: :simple-cplusplus: **C / C++** | `CMakeLists.txt` / `platformio.ini` | Configuração reprodutível de compilação (*build*) e dependências de firmware. | ✅ **Sim** |
+| :simple-c: :simple-cplusplus: **C / C++** | `build/`, `.pio/`, `*.o`, `*.elf`, `*.hex` | Pastas de compilação, objetos intermediários e binários executáveis. | ❌ **NUNCA** |
 
 ---
 
@@ -38,4 +38,4 @@ Lista dos arquivos e diretórios fundamentais em uma arquitetura de software de 
 
 * 🎓 **Passo a passo:** [Tutorial 3: Estruturando seu Primeiro Projeto de Engenharia](../tutorials/estrutura-projeto.md)
 * 🛠️ **Configuração de `.gitignore`:** [Como Gerenciar Dados Científicos e Configurar o `.gitignore`](../how-to/gerenciar-dados-gitignore.md)
-* 🛠️ **Guias por linguagem:** [Julia](../how-to/projetos-julia.md), [MATLAB/Octave](../how-to/projetos-matlab-octave.md) e [C/C++](../how-to/projetos-c-cpp.md)
+* 🛠️ **Guias por linguagem:** [:simple-julia: Julia](../how-to/projetos-julia.md), [:simple-octave: MATLAB/Octave](../how-to/projetos-matlab-octave.md) e [:simple-c: :simple-cplusplus: C/C++](../how-to/projetos-c-cpp.md)

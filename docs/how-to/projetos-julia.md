@@ -1,4 +1,6 @@
-# Como Estruturar Projetos Científicos em Julia
+# :simple-julia: Como Estruturar Projetos Científicos em Julia
+
+![Julia](https://img.shields.io/badge/Julia-1.10+-9558B2?logo=julia&logoColor=white)
 
 A linguagem **Julia** conquistou grande espaço na Engenharia Elétrica e na computação científica por combinar uma sintaxe matemática limpa (próxima ao MATLAB e Python) com velocidades de execução comparáveis ao C/C++. No contexto de sistemas de energia e controle, pacotes como `JuMP.jl`, `PowerModels.jl` e `DifferentialEquations.jl` são amplamente utilizados em pesquisas de ponta.
 
@@ -128,7 +130,6 @@ julia --project=. test/runtests.jl
 
 ## Veja Também
 
+* 🛠️ **Criação automática:** [Como Automatizar a Criação do Diretório de Trabalho (`.ps1` e `.sh`)](automatizar-criacao-projeto.md)
 * 💡 **Conceitos:** [Isolamento de Ambientes](../explanation/isolamento-ambientes.md) e [Testes Automatizados](../explanation/testes-automatizados.md)
-* 🛠️ **Dados e Git:** [Como Gerenciar Dados Científicos e Configurar o `.gitignore`](gerenciar-dados-gitignore.md)
 * 📖 **Referência:** [Convenções de Nomenclatura](../reference/convencoes-nomenclatura.md) e [Estrutura de Arquivos](../reference/estrutura-arquivos.md)
-

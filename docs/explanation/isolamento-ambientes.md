@@ -24,23 +24,23 @@ Embora nossos tutoriais iniciais utilizem Python como exemplo base, o princípio
 
 | Linguagem | Gerenciador / Ferramenta | Arquivo de Declaração | Arquivo de Trava (*Lockfile*) | Comando para Reproduzir Ambiente |
 | :--- | :--- | :--- | :--- | :--- |
-| **Python** | [`uv`](../tutorials/setup-uv.md) | `pyproject.toml` | `uv.lock` | `uv sync` |
-| **Julia** | [`Pkg` (nativo)](../how-to/projetos-julia.md) | `Project.toml` | `Manifest.toml` | `julia --project=. -e 'using Pkg; Pkg.instantiate()'` |
-| **MATLAB / Octave** | [`startup.m` / Projects](../how-to/projetos-matlab-octave.md) | `README.md` (versão + Toolboxes) | — | Executar `startup.m` ao abrir a pasta raiz |
-| **C / C++** | [`CMake` / `PlatformIO`](../how-to/projetos-c-cpp.md) | `CMakeLists.txt` ou `platformio.ini` | `platformio.ini` (versões fixas) | `cmake -B build && cmake --build build` ou `pio run` |
+| :simple-python: **Python** | [`uv`](../tutorials/setup-uv.md) | `pyproject.toml` | `uv.lock` | `uv sync` |
+| :simple-julia: **Julia** | [`Pkg` (nativo)](../how-to/projetos-julia.md) | `Project.toml` | `Manifest.toml` | `julia --project=. -e 'using Pkg; Pkg.instantiate()'` |
+| :simple-octave: **MATLAB / Octave** | [`startup.m` / Projects](../how-to/projetos-matlab-octave.md) | `README.md` (versão + Toolboxes) | — | Executar `startup.m` ao abrir a pasta raiz |
+| :simple-c: :simple-cplusplus: **C / C++** | [`CMake` / `PlatformIO`](../how-to/projetos-c-cpp.md) | `CMakeLists.txt` ou `platformio.ini` | `platformio.ini` (versões fixas) | `cmake -B build && cmake --build build` ou `pio run` |
 
 ## A Revolução do `uv` no Ecossistema Python
 
-No Python, gerenciar essas bolhas exigia historicamente o domínio de várias ferramentas fragmentadas (`venv`, `pip`, `pyenv`, `pip-tools` ou `conda`). Atualmente, o ecossistema consolidou essas funções no **`uv`**, um gerenciador de pacotes e projetos desenvolvido pela Astral e escrito em Rust:
+No :simple-python: **Python**, gerenciar essas bolhas exigia historicamente o domínio de várias ferramentas fragmentadas (`venv`, `pip`, `pyenv`, `pip-tools` ou `conda`). Atualmente, o ecossistema consolidou essas funções no **`uv`**, um gerenciador de pacotes e projetos desenvolvido pela Astral e escrito em Rust:
 
 1. **Velocidade e Eficiência:** Resolve dependências e cria ambientes virtuais (`.venv`) dezenas de vezes mais rápido que as ferramentas tradicionais, utilizando um cache global inteligente.
 2. **Determinismo com `uv.lock`:** Ao adicionar uma biblioteca (`uv add`), o `uv` atualiza o `pyproject.toml` e gera o arquivo `uv.lock`, gravando versões exatas e *hashes* criptográficos de toda a árvore de pacotes.
 3. **Execução Transparente (`uv run`):** Garante que qualquer script (ex: `uv run simular_circuito.py`) seja executado estritamente dentro da bolha `.venv` do projeto.
 
 !!! warning "Regra de Ouro no Laboratório"
-    * **Em Python:** Nunca use `pip install` global; use sempre `uv add` e `uv run`.
-    * **Em Julia:** Nunca instale pacotes de pesquisa no ambiente global `@v1.x`; ative sempre o projeto local com `julia --project=.`.
-    * **Em MATLAB/Octave:** Nunca dependa do botão manual *Set Path*; versione um script `startup.m` na raiz do repositório.
+    * :simple-python: **Em Python:** Nunca use `pip install` global; use sempre `uv add` e `uv run`.
+    * :simple-julia: **Em Julia:** Nunca instale pacotes de pesquisa no ambiente global `@v1.x`; ative sempre o projeto local com `julia --project=.`.
+    * :simple-octave: **Em MATLAB/Octave:** Nunca dependa do botão manual *Set Path*; versione um script `startup.m` na raiz do repositório.
 
 ---
 
@@ -48,4 +48,4 @@ No Python, gerenciar essas bolhas exigia historicamente o domínio de várias fe
 
 * 💡 **Próximo conceito:** [Arquitetura da Informação: A Filosofia Diátaxis](filosofia-diataxis.md)
 * 🎓 **Na prática (Python):** [Tutorial 1: Configurando seu Ambiente com `uv`](../tutorials/setup-uv.md)
-* 🛠️ **Guias por linguagem:** [Projetos em Julia](../how-to/projetos-julia.md), [Projetos em MATLAB/Octave](../how-to/projetos-matlab-octave.md) e [Projetos em C/C++](../how-to/projetos-c-cpp.md)
+* 🛠️ **Guias por linguagem:** [:simple-julia: Projetos em Julia](../how-to/projetos-julia.md), [:simple-octave: Projetos em MATLAB/Octave](../how-to/projetos-matlab-octave.md) e [:simple-c: :simple-cplusplus: Projetos em C/C++](../how-to/projetos-c-cpp.md)
