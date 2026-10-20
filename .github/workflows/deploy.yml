@@ -1,0 +1,30 @@
+name: Deploy Documentação
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sincronizar dependências
+        run: uv sync
+
+      - name: Publicar no GitHub Pages
+        run: uv run mkdocs gh-deploy --force
+

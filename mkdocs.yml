@@ -1,0 +1,104 @@
+site_name: Guia de Projetos Computacionais — GREI-UFC
+site_url: https://grei-ufc.github.io/docs-grei/
+repo_url: https://github.com/grei-ufc/docs-grei
+repo_name: grei-ufc/docs-grei
+
+theme:
+  name: material
+  logo: assets/LOGO.png
+  favicon: assets/favicon.ico
+  language: pt-BR
+  palette:
+    # Modo Claro
+    - scheme: default
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo escuro
+
+    # Modo Escuro
+    - scheme: slate
+      primary: green
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo claro
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Início: index.md
+
+  - Explicação (Conceitos):
+      - Por que reprodutibilidade?: explanation/reproducibilidade.md
+      - Como funciona o Git: explanation/controle-de-versao.md
+      - Isolamento de ambientes: explanation/isolamento-ambientes.md
+      - Filosofia Diátaxis: explanation/filosofia-diataxis.md
+      - Testes automatizados: explanation/testes-automatizados.md
+
+  - Tutoriais (Mãos à obra):
+      - 1. Configurando seu ambiente com uv: tutorials/setup-uv.md
+      - 2. Primeiros passos com Git: tutorials/primeiro-git.md
+      - 3. Estruturando um projeto: tutorials/estrutura-projeto.md
+      - 4. Documentando com MkDocs: tutorials/documentando-mkdocs.md
+      - 5. Testando com pytest: tutorials/testando-pytest.md
+
+  - Guias (How-to):
+      - Python e Fluxo Geral:
+          - Adicionar dependência (uv): how-to/adicionar-dependencia.md
+          - Usar Jupyter Notebooks com uv: how-to/usar-jupyter-uv.md
+          - Configurar pre-commit e Ruff: how-to/configurar-precommit-ruff.md
+          - Documentar código com Docstrings: how-to/documentar-codigo-docstrings.md
+      - Outras Linguagens Científicas:
+          - Projetos em Julia: how-to/projetos-julia.md
+          - Projetos em MATLAB/Simulink e Octave: how-to/projetos-matlab-octave.md
+          - Projetos em C/C++ e Embarcados: how-to/projetos-c-cpp.md
+      - Versionamento e Governança:
+          - Branches, Pull Requests e Releases: how-to/fluxo-branches-pull-requests.md
+          - Resolver conflitos no Git: how-to/resolver-conflitos-git.md
+          - Gerenciar dados e .gitignore: how-to/gerenciar-dados-gitignore.md
+          - Publicar no GitHub Pages: how-to/publicar-github-pages.md
+          - Escrever um README: how-to/escrever-readme.md
+          - Escolher uma licença: how-to/escolher-licenca.md
+
+  - Referência:
+      - Comandos uv: reference/comandos-uv.md
+      - Comandos Git: reference/comandos-git.md
+      - Estrutura de arquivos: reference/estrutura-arquivos.md
+      - Convenções de nomenclatura: reference/convencoes-nomenclatura.md
+      - Solução de problemas (FAQ): reference/solucao-problemas.md
+      - Glossário: reference/glossario.md

@@ -1,7 +1,15 @@
 [project]
 name = "docs-grei"
 version = "0.1.0"
-description = "Add your description here"
+description = "Guia de boas práticas para projetos computacionais, versionamento e documentação científica do GREI-UFC"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = []
+
+[dependency-groups]
+dev = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.6",
+    "mkdocstrings[python]>=1.0.3",
+    "pygments==2.18.0",
+]
